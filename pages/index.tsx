@@ -2,12 +2,12 @@ import Footer from '../components/footer'
 import Projects from '../components/projects'
 import About from '../components/about'
 import Education from '../components/education'
-import NotFound from '../components/notfound'
 import TechnologySkills from '../components/technologyskills'
 import MyImage from '../images/unopar.png'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
-import CookieManagement from '../components/cookieManagement'
+import CookieManagement from '../utils/cookieManagement'
+import Analytics from '../utils/analytics'
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
       "AWS","Cpanel","Ubuntu","Json","Maven","SASS","GraphQL"]}/>
       <Footer year={2023}/>
       <CookieManagement/>
+      <Analytics/>
     </>
   )
 }
