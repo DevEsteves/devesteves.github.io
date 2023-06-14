@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
@@ -31,9 +31,9 @@
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.17.1",
-    "cypress": "^12.13.0",
+    "cypress": "^12.14.0",
     "dts-gen": "^0.6.1",
     "find-webpack": "^2.2.1",
-    "sass": "^1.62.1"
+    "sass": "^1.63.4"
   }
 }
