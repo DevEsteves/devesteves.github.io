@@ -1,0 +1,14 @@
+@import "./components/navbar.module";
+@import "./components/about.module";
+@import "./components/burger.module";
+@import "./components/education.module";
+@import "./components/projects.module";
+@import "./components/notfound.module";
+@import "./components/technology_skills.module";
+@import "./components/footer.module";
+@import "./components/header.module";
+
+body{
+    margin: 0;
+    background-color: white;
+}

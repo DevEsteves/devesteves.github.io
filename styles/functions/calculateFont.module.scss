@@ -1,0 +1,13 @@
+@function calculateFontSize($tag){
+    $font-size: 3rem;
+
+    @if $tag == 'h1' {
+        @return $font-size;
+    }@else if $tag == 'h2' {
+        @return $font-size - 0.5;
+    }@else if $tag == 'h3' {
+        @return $font-size - 1.5;
+    }@else if $tag == 'p' {
+        @return $font-size - 2;
+    }
+}

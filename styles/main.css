@@ -1,0 +1,166 @@
+@media screen and (min-width: 1300px) {
+  .navbar {
+    position: absolute;
+  }
+  .navbar {
+    align-items: center;
+    max-width: 30%;
+    width: 20%;
+    display: grid;
+  }
+  .navbar .profile-img {
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+  .navbar ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+    color: black;
+  }
+}
+@media screen and (max-width: 1299px) {
+  .navbar {
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .profile-img {
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+.container section {
+  padding: 0 10px 0 10px;
+}
+.container section .about {
+  font-size: 17px;
+}
+
+.Education {
+  width: 100%;
+}
+.Education section {
+  padding: 0 10px 0 10px;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.Education .education-title {
+  margin-right: 20px;
+}
+.Education .education-text {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.projects {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects section {
+  padding: 0 10px 0 10px;
+}
+.projects ul {
+  list-style-type: none;
+}
+
+.technology-skills {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 48rem;
+}
+.technology-skills section {
+  padding: 0 10px 0 10px;
+}
+.technology-skills .prog-Languages ul, .technology-skills .frameworks ul, .technology-skills .others ul {
+  list-style: none;
+}
+.technology-skills .prog-Languages ul li, .technology-skills .frameworks ul li, .technology-skills .others ul li {
+  list-style-type: none;
+  display: inline-block;
+  white-space: pre-wrap;
+}
+.technology-skills .prog-Languages ul, .technology-skills .frameworks ul, .technology-skills .others ul {
+  padding: 0px;
+}
+.technology-skills .prog-Languages ul li:not(:last-child)::after, .technology-skills .frameworks ul li:not(:last-child)::after, .technology-skills .others ul li:not(:last-child)::after {
+  display: inline-block;
+  content: ", ";
+}
+
+.footer {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.ds-header {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ds-header h1 {
+  font-size: 3rem;
+}
+.ds-header ul {
+  font-size: 17px;
+  padding: 0;
+}
+.ds-header ul li {
+  display: inline-block;
+  margin-right: 12px;
+}
+.ds-header ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1299px) {
+  .ds-header {
+    display: grid;
+  }
+  .ds-header ul {
+    padding: 0 10px 0 10px;
+    display: grid;
+  }
+  .ds-header ul li {
+    padding: 3px;
+  }
+  .ds-header h1 {
+    margin: 0 auto 0 auto;
+  }
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+.technology-skills{
+    section{
+        padding: 0 10px 0 10px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 48rem;
+    .prog-Languages ul, .frameworks ul, .others ul{
+        list-style: none
+    }
+
+    .prog-Languages ul li, .frameworks ul li, .others ul li{
+        list-style-type: none;
+        display: inline-block;
+        white-space: pre-wrap;
+    }
+
+    .prog-Languages ul, .frameworks ul, .others ul{
+        padding: 0px;
+        li:not(:last-child)::after {
+            display: inline-block;
+            content: ', ';
+        }
+    }
+}
