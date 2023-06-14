@@ -7,10 +7,8 @@ name: Deploy Next.js site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["testing-nextjs"]
 
-env:
-  ga_id: ${{ secrets.GA_ID }}
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -81,6 +79,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        env:
+          ga_id: ${{ secrets.GA_ID }}
         with:
           path: ./out
 
