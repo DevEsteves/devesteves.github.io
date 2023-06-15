@@ -28,6 +28,7 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    permissions: read-all
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -79,10 +80,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        env:
-          ga_id: ${{ secrets.GA_ID }}
         with:
           path: ./out
+      - name: Run ga
+        uses: peaceiris/actions-gh-pages@v3
+        env:
+          ga_id: ${{ secrets.GA_ID }}
 
   # Deployment job
   deploy:
