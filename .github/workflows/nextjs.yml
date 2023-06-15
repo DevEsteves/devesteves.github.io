@@ -82,12 +82,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-      - name: Run ga
-        uses: peaceiris/actions-gh-pages@v3
-        env:
-          ga_id: ${{ secrets.GA_ID }}
-        with:
-          publish_dir: ./out
+          
 
   # Deployment job
   deploy:
@@ -97,6 +92,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Set up environment variables
+        run: echo "GA_ID=${{ secrets.GA_ID }}" >> $GITHUB_ENV
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        env:
+          GA_ID: ${{ secrets.GA_ID }}
