@@ -1,6 +1,6 @@
 import ReactGA4 from 'react-ga4'
 
-const measurement_id = process.env.ga_id
+const measurement_id = process.env.deploy_key
 
 function initializeAnalytics(){
     ReactGA4.initialize(`${measurement_id}`);

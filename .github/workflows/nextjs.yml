@@ -84,8 +84,8 @@ jobs:
           path: ./out
       - name: Run ga
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          ga_id: ${{ secrets.GA_ID }}
+        with:
+          deploy_key: ${{ secrets.GA_ID }}
 
   # Deployment job
   deploy:
