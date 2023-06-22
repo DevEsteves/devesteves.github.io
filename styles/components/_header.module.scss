@@ -24,6 +24,7 @@
     .ds-header{
         display: grid;
         ul{
+            justify-items: center;
             padding: 0 10px 0 10px;
             li{
                 padding: 3px;

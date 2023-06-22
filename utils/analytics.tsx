@@ -6,16 +6,15 @@ function initializeAnalytics(){
     ReactGA4.initialize(`${measurement_id}`);
     if(typeof window !== "undefined"){
       ReactGA4.send({ hitType: "pageview", page: window.location.pathname});
-      console.log('test')
     }
     
-     const logEvent = (category = '', action = '') => {
+     const logEvent = (category: string, action: string) => {
       if (category && action) {
         ReactGA4.event({ category, action })
       }
     }
     
-     const logException = (description = '', fatal = false) => {
+     const logException = (description: string, fatal: boolean = false) => {
       if (description) {
         ReactGA4.gtag('event', 'exception', {
           description,
