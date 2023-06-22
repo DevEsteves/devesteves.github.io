@@ -8,6 +8,7 @@
     }@else if $tag == 'h3' {
         @return $font-size - 1.5;
     }@else if $tag == 'p' {
-        @return $font-size - 2;
+        $font-size: 17px;
+        @return $font-size;
     }
 }

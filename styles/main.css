@@ -77,6 +77,9 @@
   flex-grow: 1;
   padding-left: 20px;
 }
+.Education .education-detail p {
+  font-size: 17px;
+}
 
 .projects {
   width: 100%;
@@ -86,6 +89,9 @@
 }
 .projects section {
   padding: 0 10px 0 10px;
+}
+.projects section p {
+  font-size: 17px;
 }
 .projects ul {
   list-style-type: none;
@@ -100,15 +106,13 @@
 .technology-skills section {
   padding: 0 10px 0 10px;
 }
-.technology-skills .prog-Languages ul, .technology-skills .frameworks ul, .technology-skills .others ul {
-  list-style: none;
-}
 .technology-skills .prog-Languages ul li, .technology-skills .frameworks ul li, .technology-skills .others ul li {
   list-style-type: none;
   display: inline-block;
   white-space: pre-wrap;
 }
 .technology-skills .prog-Languages ul, .technology-skills .frameworks ul, .technology-skills .others ul {
+  list-style: none;
   padding: 0px;
 }
 .technology-skills .prog-Languages ul li:not(:last-child)::after, .technology-skills .frameworks ul li:not(:last-child)::after, .technology-skills .others ul li:not(:last-child)::after {

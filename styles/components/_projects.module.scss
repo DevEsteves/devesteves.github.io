@@ -1,6 +1,11 @@
+@import "../functions/calculateFontSize.module.scss";
+
 .projects{
     section{
         padding: 0 10px 0 10px;
+        p{
+            font-size: calculateFontSize('p');
+        }
     }
     width: 100%;
     max-width: 48rem;
