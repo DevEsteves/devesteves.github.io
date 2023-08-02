@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Navbar(){
     return(
         <div className="navbar">
-            <Image className='profile-img' src={eu} alt='profile-img' width={230} height={230}/>
+            <Image className='profile-img' src={eu} alt='profile-img' width={230} height={248}/>
             <ul>
                 <li>
                     <Link className="navbar-element" href="/#home">Home</Link>
