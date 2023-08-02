@@ -5,7 +5,7 @@ import {FaGithub, FaEnvelope, FaLinkedin, FaRegListAlt, FaStackOverflow} from 'r
 
 export default function Header(){
     return(
-            <header className="ds-header">
+            <header className="ds-header" id='home'>
                 <ul>
                     <li><Link href='/Rodrigo_Curriculum.pdf' target="_self" rel="noreferrer"><FaRegListAlt/> Currículum Vitae</Link></li>
                     <li><Link href="mailto:Estevesrodri@outlook.com? subject=subject text">
