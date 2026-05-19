@@ -1,6 +1,7 @@
 import Link from "next/link";
 import eu from '../public/eu.jpg'
 import Image from 'next/image';
+import Burger from './Burger';
 
 export default function Navbar(){
     return(
@@ -23,6 +24,7 @@ export default function Navbar(){
                     <Link className="navbar-element" href="/#technology_skills">Technical Skills</Link>
                 </li>
             </ul>
+            <Burger/>
         </div>
     )
 }
