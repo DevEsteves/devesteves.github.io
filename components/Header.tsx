@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import eu from '../public/eu.jpg'
+import eu from '../public/eu.png'
 import {FaGithub, FaEnvelope, FaLinkedin, FaRegListAlt, FaStackOverflow} from 'react-icons/fa';
 
 export default function Header(){
