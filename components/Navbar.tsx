@@ -1,12 +1,12 @@
 import Link from "next/link";
-import eu from '../public/eu.jpg'
+import eu from '../public/eu.png'
 import Image from 'next/image';
 import Burger from './Burger';
 
 export default function Navbar(){
     return(
         <div className="navbar">
-            <Image className='profile-img' src={eu} alt='profile-img' width={230} height={248}/>
+            <Image className='profile-img' src={eu} alt='profile-img' width={230} height={310}/>
             <ul>
                 <li>
                     <Link className="navbar-element" href="/#home">Home</Link>
