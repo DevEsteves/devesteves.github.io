@@ -30,20 +30,13 @@
     color: black;
   }
 }
-@media screen and (min-width: 1300px) {
-  .burger-btn,
-  .burger-menu {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1299px) {
   .navbar {
     width: 100%;
     align-items: center;
     display: flex;
   }
-  .navbar ul {
+  .navbar > ul {
     display: none;
   }
   .navbar .profile-img {
@@ -52,7 +45,26 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+.container section {
+  padding: 0 10px 0 10px;
+}
+.container section .about {
+  font-size: 17px;
+}
 
+@media screen and (min-width: 1300px) {
+  .burger-btn, .burger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1299px) {
   .burger-btn {
     display: flex;
     flex-direction: column;
@@ -84,7 +96,6 @@
   .burger-btn.open span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
   }
-
   .burger-menu {
     position: fixed;
     top: 0;
@@ -117,19 +128,6 @@
     padding: 10px;
   }
 }
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 48rem;
-}
-.container section {
-  padding: 0 10px 0 10px;
-}
-.container section .about {
-  font-size: 17px;
-}
-
 .Education {
   width: 100%;
 }
